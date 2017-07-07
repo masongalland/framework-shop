@@ -24,14 +24,14 @@ export function Landing( { addToCart, featuredProducts } ) {
 
 	return (
 		<main className="landing">
-			<Link to="/shop" className="landing__full-shop-link">
-				<h1>Featured Products</h1>
-			</Link>
+			<h1>Featured Products</h1>
 			<div className="landing__products-wrapper">
 				{products}
 			</div>
 
-			<h1 className="landing__full-shop-link">Take me to the full shop!</h1>
+			<Link to="/shop" className="landing__full-shop-link">
+				<h1 className="landing__full-shop-link">Take me to the full shop!</h1>
+			</Link>
 		</main>
 	);
 }
